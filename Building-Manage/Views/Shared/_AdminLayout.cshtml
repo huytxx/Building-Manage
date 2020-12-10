@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css">
+    
+    <title>Admin</title>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <header><img src="~/images/dipvietnam.png" alt="logo" class="logo-header"></header>
+        <ul>
+            <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+            <li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+            <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+            <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+            <li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+        </ul>
+        <div class="text-center">
+            <label for="check">
+                <i class="fas fa-caret-square-left btn" style="font-size: 24px;"></i>
+            </label>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 shadow mb-4" style="box-sizing: border-box;">
+        <div class="p-0 m-0 d-none d-lg-inline d-md-inline">
+            <img src="~/images/dipvietnam.png" class="logo-header" alt="logo">
+        </div>
+        <div class="mx-2 px-2">
+            <label for="check" id="menu-btn">
+                <i class="fas fa-align-justify btn" style="font-size: 20px;"></i>
+            </label>
+        </div>
+        <div class="d-lg-none d-md-none ml-5 px-2 pb-2">
+            <span class="btn"><i class="fas fa-search" style="font-size: 20px;"></i></span>
+        </div>
+        <form class="form-inline my-2 my-lg-0 d-none d-lg-inline d-md-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for..." aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <div class="mx-2 px-2 ml-auto">
+            <a href="" class="position-relative">
+                <i class='far fa-bell' style='font-size:20px'></i>
+                <span class="badge badge-danger badge-counter">3+</span>
+            </a>
+        </div>
+        <div class="mx-2 px-2">
+            <a href="" class="position-relative">
+                <i class='far fa-envelope' style='font-size:20px'></i>
+                <span class="badge badge-danger badge-counter">9</span>
+            </a>
+        </div>
+        <div class="mx-2 px-2">
+            <a href="" class="text-link d-flex align-items-center" >
+                <span class="mr-2 d-none d-lg-inline">Xuan Huy</span>
+                <img src="~/images/photo-dog-login.jpg" alt="" class="rounded-circle" style="height: 2rem; width: 2rem;">
+            </a>
+        </div>
+    </nav>
+    <div id="content">
+        @RenderBody()
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -47,6 +47,18 @@ namespace Building_Manage
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "admin",
+                    pattern: "{controleer=Admin}/{action=Index}"
+                    ); 
+                endpoints.MapControllerRoute(
+                    name: "login",
+                    pattern: "{controleer=Login}/{action=Index}"
+                    );
+                endpoints.MapControllerRoute(
+                   name: "vali",
+                   pattern: "{controleer=Valid}/{action=Index}"
+                   );
             });
         }
     }
